@@ -70,11 +70,7 @@ def load_data(city, month, day):
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
-        try:
-            df = df[df['day_of_week'] == day.title()]
-        except IndexError:
-            print('Invalid input for week day, applying default "all" ....')
-
+        df = df[df['day_of_week'] == day.title()]
 
     return df
 
