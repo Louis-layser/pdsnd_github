@@ -15,3 +15,7 @@ bikeshares.py, chicago.csv, new-york-city.csv and whashington.csv
 Thanks to the **Udacity Team** for providing this data sets.
 The data science definition is gotten from https://en.wikipedia.org/wiki/Data_science
 
+### Author
+**Name:** *Louis Ayivi*
+**Email:** *louisayivi.dev@gmail.com*
+
