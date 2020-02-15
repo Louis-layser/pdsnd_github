@@ -6,7 +6,7 @@ US Bikeshare Data
 
 ### Description
 This project is based on Data Science and Data science is defined as an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data.
-The project used **python, pandas and the numpy** libaries to create interactive exploration of the US bikeshare data whereby stistics are given based on the user inputs.
+The project used **python, pandas and the numpy** libaries to create interactive exploration of the US bikeshare data whereby statistics are given based on the user inputs.
 
 ### Files used
 bikeshares.py, chicago.csv, new-york-city.csv and whashington.csv
