@@ -165,6 +165,18 @@ def main():
         df = load_data(city, month, day)
         
         print('\n'+ ('='*20) + ' DISPLAY RESULTS ' + ('='*20))
+
+        def display_stats(stats, display):
+            """
+            This display statistics base on the argument supplied
+            Arg:
+                (str) stats - statistics to display
+                (func) display - statistical function to call
+            """
+            input_text = input('\nWould you like to see {} statistics? Enter yes or no.\n'.format(stats))
+            if input_text.lower() == 'yes':
+                display(df)
+
         display_stats = input('\nWould you like to see time statistics? Enter yes or no.\n')
         if display_stats.lower() == 'yes':
             time_stats(df)
