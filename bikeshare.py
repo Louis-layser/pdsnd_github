@@ -177,21 +177,14 @@ def main():
             if input_text.lower() == 'yes':
                 display(df)
 
-        display_stats = input('\nWould you like to see time statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            time_stats(df)
-            
-        display_stats = input('\nWould you like to see station statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            station_stats(df)
-        
-        display_stats = input('\nWould you like to see trip duration statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            trip_duration_stats(df)
-            
-        display_stats = input('\nWould you like to see user statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            user_stats(df)
+        # display time statistics
+        display_stats('time', time_stats)
+        # display station statistics
+        display_stats('station', station_stats)
+        # display trip statistics
+        display_stats('trip duration', trip_duration_stats)
+        # display user statistics
+        display_stats('user', user_stats)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() == 'no':
