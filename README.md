@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+Tuesday February 4th 2020
 
 ### Project Title
-Replace the Project Title
+US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This project is based on Data Science and Data science is defined as an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data.
+The project used **python, pandas and the numpy** libaries to create interactive exploration of the US bikeshare data whereby stistics are given based on the user inputs.
 
 ### Files used
-Include the files used
+bikeshares.py, chicago.csv, new-york-city.csv and whashington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to the **Udacity Team** for providing this data sets.
+The data science definition is gotten from https://en.wikipedia.org/wiki/Data_science
 
