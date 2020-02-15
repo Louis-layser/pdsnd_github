@@ -162,21 +162,26 @@ def main():
         df = load_data(city, month, day)
         
         print('\n'+ ('='*20) + ' DISPLAY RESULTS ' + ('='*20))
-        display_stats = input('\nWould you like to see time statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            time_stats(df)
-            
-        display_stats = input('\nWould you like to see station statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            station_stats(df)
-        
-        display_stats = input('\nWould you like to see trip duration statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            trip_duration_stats(df)
-            
-        display_stats = input('\nWould you like to see user statistics? Enter yes or no.\n')
-        if display_stats.lower() == 'yes':
-            user_stats(df)
+
+        def display_stats(stats, display):
+            """
+            This display statistics base on the argument supplied
+            Arg:
+                (str) stats - statistics to display
+                (func) display - statistical function to call
+            """
+            input_text = input('\nWould you like to see {} statistics? Enter yes or no.\n'.format(stats))
+            if input_text.lower() == 'yes':
+                display(df)
+
+        # display time statistics
+        display_stats('time', time_stats)
+        # display station statistics
+        display_stats('station', station_stats)
+        # display trip statistics
+        display_stats('trip duration', trip_duration_stats)
+        # display user statistics
+        display_stats('user', user_stats)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() == 'no':
